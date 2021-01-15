@@ -19,16 +19,16 @@ public class Client implements Serializable {
 	private String name;
 	private String email;
 	private String address;
-	private int phoneNumber;
-	private String cpf;
-	private char sex;
+	private Long phoneNumber;
+	private Long cpf;
+	private String sex;
 	
 	
 	public Client() {
 	}
 
 	
-	public Client(Long id, String name, String email, String address, int phoneNumber, String cpf, char sex) {
+	public Client(Long id, String name, String email, String address, Long phoneNumber, Long cpf, String sex) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -81,32 +81,32 @@ public class Client implements Serializable {
 	}
 
 
-	public int getPhoneNumber() {
+	public Long getPhoneNumber() {
 		return phoneNumber;
 	}
 
 
-	public void setPhoneNumber(int phoneNumber) {
+	public void setPhoneNumber(Long phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
 
 
-	public String getCpf() {
+	public Long getCpf() {
 		return cpf;
 	}
 
 
-	public void setCpf(String cpf) {
+	public void setCpf(Long cpf) {
 		this.cpf = cpf;
 	}
 
 
-	public char getSex() {
+	public String getSex() {
 		return sex;
 	}
 
 
-	public void setSex(char sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
